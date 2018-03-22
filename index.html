@@ -53,6 +53,10 @@
 						<!-- more Elements -->
 					</div>
 
+				<aside class="notes">
+					Buongiorno a tutti mi chiamo Anthony Torretti e l'argomento della mia tes riguarda la progettazione elo sviluppo
+					di una etichettatrice ad alta velocità per uso nel settore farmaceutico
+				</aside>
 
 				</section>
 
@@ -69,36 +73,50 @@
 
 						<img width="50%" height="30%" data-src="images/Etich.png">
 						<p> Sviluppo di Macchinari Automatizzati per l'Industria Farmaceutica </p>
+
+						<aside class="notes">
+						Il mio lavoro di tesi e tirocinio è stato svolto presso l'azienda SPH-Group situata in Cepagatti e ove attualmente lavoro.
+						Siamo una ditta specializzata nella costruzione Ex-Novo di macchinari automatizati per l'industria del Food and Packaging
+						In particolare lavoriamo nel settore farmaceutico
+						</aside>
 					</section>
 					<section>
-						<p class="title">Fasi di Sviluppo Macchinario Industriale</p>
+						<p class="title">Fasi di Progettazione Macchinario Industriale</p>
 
 
 							<ul>
-								<li class="fragment"> Progettazione Meccanica</li>
-								<li class="fragment"> Progettazione Elettrica ed Elettronica</li>
-								<li class="fragment"> Progettazione e Sviluppo Software</li>
+								<li> Progettazione Meccanica</li>
+								<li> Progettazione Elettrica ed Elettronica</li>
+								<li> Progettazione e Sviluppo Software</li>
 							</ul>
 
 
-						<div class="fragment">
-							<p>Ognuna di queste fasi di sviluppo non è sequenziale bensì soggetta ad Iterazioni </p>
-							<p>Ogni fase potrebbe richiedere la reiterazioni in fasi precedenti   </p>
+						<p>Ognuna di queste fasi di sviluppo non è sequenziale bensì soggetta ad Iterazioni </p>
 
 
-						</div>
+						<aside class="notes">
+								Ci occupiamo della progettazione meccanica, elettrica ed elettronica ed infine software
+								Lo sviluppo di
+							</aside>
+
 
 					</section>
 
 					<section>
 						<p class="title">Sviluppo Iterativo in ambito Industriale</p>
 						<img width="80%" height="40%" data-src="images/ITE.png">
+
+						<p>Ogni fase potrebbe richiedere la revisione in fasi precedenti   </p>
+
 						<aside class="notes">
-							Da Ingnegneri dell'informazione ci siamo spesso imbattuti nei processi di svillupo iterativo all'interno di una applicazione Software, ma con mia estrema
-							sorpresa ho realzzativo che il processo di sviluppo di un intero macchnario avviene anch'esso tramite delle macro iterazioni tra i vari processi Meccanici Elettrici e Software
-							A differenza del semplice sviluppo software capita infatti spesso nel campo dell'automazione industriale di iterare a partire dalla meccanica
-							Spesso Specifiche di Sistema che vengono fuori in fasi successive potrebbero richiedere modifiche nelle fasi precedenti
+							Nello sviluppo di una macchina composta da vari team di progettazione in campi diversi
+							Oltre alle iterazione specifiche delle varie fasi, si presenta la possibilità che decisioni
+							prese in fasi successive potrebbero portare	alla revisione o re-iterazione in fasi precedenti.
+							Questo aumenta di tanto la complessità della progettazione e rende fondamentale la collaborazione tra i vari team
 						</aside>
+
+
+
 					</section>
 
 
@@ -126,6 +144,9 @@
 
 				<section>
 					<p class="title">Progettazione e Sviluppo Software</p>
+
+					<aside class="notes">
+						Consideriamo Progettazione Meccanica ed Elettrica Conclusi</aside>
 				</section>
 
 		<!--SLIDE 3-->
@@ -166,8 +187,8 @@
 
 						<aside class="notes">
 							Fase di studio degli schemi elettrici.
-							Per il progettista software lo schema Elettrico è fondamentale.
-							Senza uno schema elettrico dettagliato è pressochè impossibile progettare un macchinario
+							Per il progettista software lo schema Elettrico è la bibbia.
+							Senza uno schema elettrico ben dettagliato è pressochè impossibile progettare un macchinario
 
 						</aside>
 
@@ -194,11 +215,11 @@
 					<!--<img class="blank" src="images/BLANK.png">-->
 					<aside class="notes">
 						Terminato lo studio iniziale più generale bisogna passare ad una analisi dei vari dispositivi
-						con cui la macchina deve "dialogare". Esse sono tutte riportate nello schema elettrico ma su
+						con cui la macchina deve "dialogare". Esse sono tutte riportate nello schema elettrico ma per
 						ognuno di essi si dovrà studiare nel dettaglio il funzionamento. Nel caso della Labeltech sono i seguenti
+					PROFINET: Bus propietario Siemens che viaggia su ethernet. Per chi è famigliare con i sistemi embedded è una comunicazione a basso livello con i registri del dispositivo
 
-					PROFINET: SIMILI AI REGISTRI DI MEMORIA IN SISTEMI EMBEDDED
-						TCP/IP: Stampante Dataflex comunicazione con linguaggio proprietario comandi con Carriage Return
+
 					</aside>
 
 
@@ -212,6 +233,10 @@
 						<p>Bisogna ricreare nel tool di sviluppo l'esatta configurazione <br>del Sistema come da Schema Elettrico </p>
 
 							<img width="50%" src="images/ELE10.JPG">
+						<aside class="notes">
+							A queto punto si può aprire il tool di sviluppo specifico al PLC e  ricrearne all'interno l'esatta configurazione
+						</aside>
+
 					</section>
 
 					<section>
@@ -264,14 +289,13 @@
 				<section>
 					<section>
 						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
-						<p class="title">Analisi e Progettazione Processo PLC</p>
 
-						<p>Progettazione e Design della struttura del software</p>
+						<p class="title" >Progettazione e Design della struttura del software</p>
 						<ol>
 							<li>Struttura Generale del Software</li>
 							<li>Gestione Allarmi</li>
 							<li>Interfacce di Controllo e Gestione Dispositivi</li>
-							<li>Progettazione Metodo Controllo Scarti e Idoneità</li>
+							<li>Abilitazioni - Controllo Scarti e Idoneità</li>
 							<li>Sequenza del Ciclo Automatico</li>
 						</ol>
 
@@ -291,10 +315,9 @@
 						<img width="50%" src="images/TIA4.png">
 
 					<aside class="notes">
-						Prima di tutto bisogna definire la struttre generale del software. Questo dipende dalle abitubini
+						Prima di tutto bisogna definire la struttura generale del software. Questo dipende dalle abitubini
 						del programmatore ma anche da alcune best practice ormai standard nel mondo della programmazione PLC.
-
-						IN FIGURA IL MAPPING IO
+						Quali Mapping I/O - Utilizzo di FB come interfacce di controllo - Suddivisione tra comandi Manuali ed Automatici
 					</aside>
 
 					</section>
@@ -335,9 +358,9 @@
 						<aside class="notes">
 							Di norma per Ogni dispositivo viene creata una Funzione associata ad un DB
 							che ne metterà a disposizione una interfaccia più ad alto livello con il quale poter Gestire i dispositivi
-							in modo più semplice. Ricordiamo che a questo momento abbiamo solo un mapping dei registri di memoria dei
-							dispositivi. Per esempio nella figura per abilitare il motore del massaggiatore dobbiamo scrivere sul
-							Registro della sua control WORD il valore Esadecimale 10 che corrisponde ad attivare il 5 Bit
+							in modo più semplice. Per i dispositivi profinet ad esempio la mappatura delle variabili dispositivo sul PLC non
+							ci danno una interfaccia ad alto livello. Spesso per avviare un motore bisgona agire su più bit consemoraneamente
+							pertanto una FB con una interfaccia ci permette di stabilire logiche complesse dietro una interfaccia semplice.
 						</aside>
 
 					</section>
@@ -347,7 +370,7 @@
 
 						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
 
-						<p class="title">Controllo Scarti e Idoneità Prodotto</p>
+						<p class="title">Abilitazioni - Controllo Scarti e Idoneità</p>
 
 						<p> Dipende dalla Tipologia della Macchina Se a Ciclo Continuo o a Fasi </p>
 
@@ -370,7 +393,7 @@
 					<section>
 						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
 
-						<p class="title">Controllo Scarti e Idoneità Prodotto </p>
+						<p class="title">Abilitazioni - Controllo Scarti e Idoneità</p>
 						<a>Macchina a Ciclo Continuo : <strong>Camme Digitali </strong></a>
 
 						<p>Simili come funzionamento alle Camme Meccaniche ma dipendenti <br> da Gradi Macchina letti da un Encoder</p>
@@ -393,7 +416,7 @@
 					<section>
 						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
 
-						<p class="title">Controllo Scarti e Idoneità Prodotto </p>
+						<p class="title">Abilitazioni - Controllo Scarti e Idoneità</p>
 						<a>Macchina a Ciclo Continuo : <strong>Shift Register</strong></a>
 
 						<p>Soluzione al Traking dei prodotti all'interno della macchina al fine di determinarne lo stato</p>
@@ -478,11 +501,9 @@
 						<img class="rigth" width="30%" src="images/DATALOGIC.jpg">
 
 						<aside class="notes">
-							Ove presenti delle telecamere di controllo bisogna anche sviluppare i loro programmi di controllo.
-							Questo procedimento varia in base a marca e modello delle telecamere ma in linea di massima il
-							principio dei programmi di visione è comune tra tutti.
-
-							Manipolazione Immagine in ingresso con filtri per renderlo più idoneo all'ispezione (Binarizzazione, Modifica Scala Colori)
+							Ove presenti delle telecamere di controllo bisogna anche sviluppare i loro programmi di visione.
+							Molto sommariamente l'obiettivo è quello di catturare un immagine su comando dal PLC, ispezionarla,
+							elaborarne il risultato e rispedire tale risultato al PLC.
 						</aside>
 					</section>
 
@@ -510,7 +531,7 @@
 
 						<img width="55%"  src="images/VIS13.png">
 
-						<aside>
+						<aside class="notes">
 							Al Termine dell'ispezione il risultato verrà inviato al PLC dopo il tempo di elaborazione
 							che può variare dalle decine alle centiania di millisecondi. Si può facilmente intuire come un
 							controllo di visione complesso possa ridurre le velocità macchina in modo notevole.
@@ -540,7 +561,7 @@
 							</ul>
 
 					<aside class="notes">
-						Vicini alla fase finale del progetto si passa alla progettazione di quanto riguarda il pannelo operatore e L'HMI
+						Vicini alla fase finale del progetto si passa alla configurazione del pannelo operatore.
 						Prima di tutto bisogna studiare i requisiti, l'hardware disponibile, le normative vigenti nel campo (21CFR)
 						Infine bisogna studiare l'infrastruttura informatica del cliente confrontandosi con il loro Team IT.
 						Alcuni utenti gestiscono gli accessi alle macchine tramite l'active directory di microsoft
@@ -637,6 +658,7 @@
 							Da notare la home page che rappresenta fedelmente il processo macchina.
 							La posizione delle stelle e lo stato dei flaconi è esattamente quello che si vedrebbe nella macchina
 							dal vivo. Ovviamente qui è simulato a rallentatore
+							FAT(FACTORY ACCEPTANCE TEST) Collaudo
 						</aside>
 
 					</section>
@@ -667,8 +689,8 @@
 
 					<aside class="notes">
 						Sviluppare un macchinario nel settore dell'automazione industriale è molto complesso e richiede una
-						preparazione in diversi campi. Tuttavia la soddisfazione che ne risulta supera di gran lunga lo sforzo
-						e l'impegno speso. Sopratutto quando alla fine vedi i risultati del lavoro svolto.
+						preparazione in diversi campi anche diversi da quello che uno ha studiato. Tuttavia la soddisfazione che ne risulta supera di gran lunga lo sforzo
+						e l'impegno richiesto. Sopratutto quando alla fine vedi il tuo lavoro prendere vita.
 					</aside>
 
 				</section>

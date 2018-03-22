@@ -16,17 +16,17 @@
 
 .logo_left {
     float: left !important;
-    width:100px;
-    margin-left:100px !important;
+    width: 180px;
+    margin-left: 100px !important;
 }
 .logo_right {
     float: right !important;
-    width:140px;
-    margin-right:100px !important;
+    width: 190px;
+    margin-right: 100px !important;
 }
 
 .logo_header {
-height:150px
+    height: 250px;
 }
 
 .logo_sph {
@@ -38,6 +38,7 @@ height:150px
 .img_no_border {
     background: none !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
 .green {
