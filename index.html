@@ -1,0 +1,712 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!--<link rel="stylesheet" href="css/theme/black.css">-->
+		<!--<link rel="stylesheet" href="css/theme/blood.css">-->
+		<link rel="stylesheet" href="css/theme/cool.css">
+		<!--<link rel="stylesheet" href="css/theme/night.css">-->
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div class="logo_header">
+						<img class="logo_left img_no_border"  src="images/logo-disim.png">
+						<img class="logo_right img_no_border"  src="images/univaq_logo.png">
+					</div>
+
+					<h3 style="margin-top:-100px"class="title">Corso di Laurea in INGEGNERIA INFORMATICA</h3>
+					<p style="font-size: 0.9em">Progettazione e Sviluppo di una Etichettatrice ad alta velocità per il settore Farmaceutico</p>
+
+
+					<div style="margin-left:50px" class="left">
+						<p>Relatore</p>
+						<p><strong>Costanzo Manes</strong></p>
+						<!-- more Elements -->
+						<p>Correlatore</p>
+						<p><strong>Ing. Mario Cipolla</strong></p>
+					</div>
+
+					<div style="margin-right:50px;margin-top: 61px" class="right">
+						<p>Studente</p>
+						<p><strong>Anthony Daniel Torretti</strong></p>
+						<!-- more Elements -->
+					</div>
+
+
+				</section>
+
+		<!--SLIDE 2-->
+				<section>
+					<section>
+
+						<div style=" margin-left: -200px;">
+							<p class="title">Esperienza di Tesi e Tirocinio
+								<img style="margin-top:2px;margin-left: 13px;" class="img_no_border logo_sph" src="images/sph-logo.png">
+							</p>
+						</div>
+						<p> Settore dell'Automazione Industriale </p>
+
+						<img width="50%" height="30%" data-src="images/Etich.png">
+						<p> Sviluppo di Macchinari Automatizzati per l'Industria Farmaceutica </p>
+					</section>
+					<section>
+						<p class="title">Fasi di Sviluppo Macchinario Industriale</p>
+
+
+							<ul>
+								<li class="fragment"> Progettazione Meccanica</li>
+								<li class="fragment"> Progettazione Elettrica ed Elettronica</li>
+								<li class="fragment"> Progettazione e Sviluppo Software</li>
+							</ul>
+
+
+						<div class="fragment">
+							<p>Ognuna di queste fasi di sviluppo non è sequenziale bensì soggetta ad Iterazioni </p>
+							<p>Ogni fase potrebbe richiedere la reiterazioni in fasi precedenti   </p>
+
+
+						</div>
+
+					</section>
+
+					<section>
+						<p class="title">Sviluppo Iterativo in ambito Industriale</p>
+						<img width="80%" height="40%" data-src="images/ITE.png">
+						<aside class="notes">
+							Da Ingnegneri dell'informazione ci siamo spesso imbattuti nei processi di svillupo iterativo all'interno di una applicazione Software, ma con mia estrema
+							sorpresa ho realzzativo che il processo di sviluppo di un intero macchnario avviene anch'esso tramite delle macro iterazioni tra i vari processi Meccanici Elettrici e Software
+							A differenza del semplice sviluppo software capita infatti spesso nel campo dell'automazione industriale di iterare a partire dalla meccanica
+							Spesso Specifiche di Sistema che vengono fuori in fasi successive potrebbero richiedere modifiche nelle fasi precedenti
+						</aside>
+					</section>
+
+
+
+
+				</section>
+
+
+				<!--SLIDE 3-->
+				<!--<section>-->
+					<!--<p class="title">Progettazione e Sviluppo Software</p>-->
+
+					<!--<ul>-->
+						<!--<li class="fragment"> Studio Processo e Schemi Elettrici</li>-->
+						<!--<li class="fragment"> Studio sulla Comunicazione dei vari Dispositivi </li>-->
+						<!--<li class="fragment"> Configurazione del PLC e dei Dispositivi Associati </li>-->
+						<!--<li class="fragment"> Analisi e Progettazione Processo PLC </li>-->
+						<!--<li class="fragment"> Sviluppo del Processo PLC</li>-->
+						<!--<li class="fragment"> Sviluppo Sistema di Visione </li>-->
+						<!--<li class="fragment"> Progettazione e Design dell'interfaccia HMI </li>-->
+						<!--<li class="fragment"> Sviluppo dell'interfaccia HMI</li>-->
+					<!--</ul>-->
+
+				<!--</section>-->
+
+				<section>
+					<p class="title">Progettazione e Sviluppo Software</p>
+				</section>
+
+		<!--SLIDE 3-->
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Studio Processo e Schemi Elettrici</p>
+
+						<ul>
+							<li>Studio del Processo del Macchinario</li>
+						</ul>
+						<p>Richiede una Buona Base di Conoscenza Meccanica </p>
+						<div>
+							<img  width="35%" src="images/M1.JPG" >
+
+							<img  width="35%"  src="images/M2.JPG" >
+						</div>
+
+						<aside class="notes">
+							La prima fase nella progettazione e sviluppo software è lo studio del processo del Macchinario
+							Questo richiede una buona base di conoscenza meccanica ma è un assoluto must nel settore dell'automazione industriale
+
+						</aside>
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title" >Studio Processo e Schemi Elettrici</p>
+
+						<ul>
+							<li>Studio ed Analisi degli Schemi Elettrici</li>
+						</ul>
+						<div>
+							<img  width="35%" src="images/SCELE2.png" >
+
+							<img  width="35%"  src="images/SCELE1.png" >
+						</div>
+
+						<aside class="notes">
+							Fase di studio degli schemi elettrici.
+							Per il progettista software lo schema Elettrico è fondamentale.
+							Senza uno schema elettrico dettagliato è pressochè impossibile progettare un macchinario
+
+						</aside>
+
+					</section>
+
+
+
+
+				</section>
+		<!--SLIDE 4-->
+				<section>
+					<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+
+					<p class="title" >Studio della Comunicazione con i vari Dispositivi </p>
+
+					<ol>
+						<li>Azionamenti Mitsubishi <a class="highlight-green"> PROFINET</a></li>
+						<li>Datalogic P-Series Camera <a class="highlight-green"> PROFINET & STANDARD I/O</a></li>
+						<li>Sick Encoder <a class="highlight-green"> PROFINET</a></li>
+						<li>VideoJet Dataflex Printer <a class="highlight-green"> TCP/IP & STANDARD I/O</a></li>
+						<li>Etichettatrice HERMA <a class="highlight-green"> STANDARD I/O</a></li>
+						<li>Inverter di Frequenza Mitsubishi <a class="highlight-green"> STANDARD & ANALOG I/O</a></li>
+					</ol>
+					<!--<img class="blank" src="images/BLANK.png">-->
+					<aside class="notes">
+						Terminato lo studio iniziale più generale bisogna passare ad una analisi dei vari dispositivi
+						con cui la macchina deve "dialogare". Esse sono tutte riportate nello schema elettrico ma su
+						ognuno di essi si dovrà studiare nel dettaglio il funzionamento. Nel caso della Labeltech sono i seguenti
+
+					PROFINET: SIMILI AI REGISTRI DI MEMORIA IN SISTEMI EMBEDDED
+						TCP/IP: Stampante Dataflex comunicazione con linguaggio proprietario comandi con Carriage Return
+					</aside>
+
+
+				</section>
+
+				<!--SLIDE 4-->
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Configurazione del PLC e dei Dispositivi Associati</p>
+						<p>Bisogna ricreare nel tool di sviluppo l'esatta configurazione <br>del Sistema come da Schema Elettrico </p>
+
+							<img width="50%" src="images/ELE10.JPG">
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Configurazione del PLC e dei Dispositivi Associati</p>
+						<p class="title">Configurazione Del Rack Del PLC</p>
+						<p>Nello specifico tool di sviluppo si inizializza il progetto importando i dispositivi <br> partendo dal Rack del PLC</p>
+
+
+							<ul class="left" style="width:40%;margin-top: 80px;margin-left: 220px">
+								<li> Setup Dispositivo PLC
+								<ul>
+									<li>PLC Siemens ET200 CPU 1510SP</li>
+								</ul>
+								</li>
+								<li> Setup Moduli I/O
+									<ul>
+										<li>2x Moduli di 16 Ingressi Digitali</li>
+										<li>3x Moduli di 16 Uscite Digitali</li>
+										<li>1x Modulo di 4 Uscite Analogiche</li>
+									</ul>
+								</li>
+
+							</ul>
+
+							<img  src="images/TIA0.png">
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Configurazione del PLC e dei Dispositivi Associati</p>
+						<p class="title">Profinet Network Setup</p>
+						<p>Configurazione della Rete Profinet del Sistema mediante assegnazione di <br><strong>Indirizzi e Nomi Dispositivo</strong></p>
+
+							<img  width="60%" src="images/TIA2.png">
+
+						<aside class="notes">
+							Con tutti i dispositivi collegati sullo stesso bus Viene effettuata una ricerca dei dispositivi a livello MAC
+							e si assegnano i relativi indirizzi e nome dispositivo. Tutti i registri di memoria dei dispositivi profinet vengono in questo modo
+							mappati come variabili locali del progetto in modo da poterle gestire come se fossero variabili del PLC stesso
+						</aside>
+
+					</section>
+
+
+				</section>
+
+
+
+				<!--SLIDE 4-->
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Analisi e Progettazione Processo PLC</p>
+
+						<p>Progettazione e Design della struttura del software</p>
+						<ol>
+							<li>Struttura Generale del Software</li>
+							<li>Gestione Allarmi</li>
+							<li>Interfacce di Controllo e Gestione Dispositivi</li>
+							<li>Progettazione Metodo Controllo Scarti e Idoneità</li>
+							<li>Sequenza del Ciclo Automatico</li>
+						</ol>
+
+						<aside class="notes">
+
+						</aside>
+
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Struttura Generale del Software</p>
+						<p>Rispettando gli Standard e Best Practice</p>
+
+						<img width="50%" src="images/TIA4.png">
+
+					<aside class="notes">
+						Prima di tutto bisogna definire la struttre generale del software. Questo dipende dalle abitubini
+						del programmatore ma anche da alcune best practice ormai standard nel mondo della programmazione PLC.
+
+						IN FIGURA IL MAPPING IO
+					</aside>
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb" style="color:#b3f0ff">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Gestione Allarmi</p>
+
+						<p>Suddivisione degli Allarmi per Categoria, Competenza e Criticità</p>
+
+						<img width="50%" src="images/LAD4.png">
+
+						<aside class="notes">
+							Un analisi da effettuare con cura è quella della gestione degli allarmi.
+							Molte macchine hanno più sotto sistemi che possono lavorare indipendente tra loro
+							anche se condividono il PLC. Se il sotto sistema X va in allarme non necessariamente
+							si deve interrompere l'esecuzione del sistema Y.
+							Vi può essere inoltre la distinzione tra Messaggi (Etichette quasi Finite),
+							Allarmi Non Immediati (Carico Massimo) ed Allarmi Immediati (Emergenza o Apertura Carter di Sicurezza)
+							</aside>
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Interfacce di Controllo e Gestione Dispositivi</p>
+
+						<p>Creazione di Funzioni e Function Block associate a DB o Struct <br> aventi funzione di Interfacce di Controllo </p>
+
+						<div>
+							<img  width="40%" src="images/TIA5.png" >
+
+							<img  width="40%"  src="images/TIA6.png" >
+						</div>
+
+						<aside class="notes">
+							Di norma per Ogni dispositivo viene creata una Funzione associata ad un DB
+							che ne metterà a disposizione una interfaccia più ad alto livello con il quale poter Gestire i dispositivi
+							in modo più semplice. Ricordiamo che a questo momento abbiamo solo un mapping dei registri di memoria dei
+							dispositivi. Per esempio nella figura per abilitare il motore del massaggiatore dobbiamo scrivere sul
+							Registro della sua control WORD il valore Esadecimale 10 che corrisponde ad attivare il 5 Bit
+						</aside>
+
+					</section>
+
+
+					<section>
+
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Controllo Scarti e Idoneità Prodotto</p>
+
+						<p> Dipende dalla Tipologia della Macchina Se a Ciclo Continuo o a Fasi </p>
+
+						<ul>
+							<li><div style="color:orange">Macchina a Fasi:</div><div>Processa un solo pezzo alla volta perciò effettare controlli e gestire lo scarto risulta molto più semplice</div></li>
+							<li><div style="color:orange">Macchina a Ciclo Continuo:</div><div>Non è gestita da Fasi pertanto non è necessario attendere che sia conclusa l'elaborazione del pezzo precedente per iniziarne un altro</div> </li>
+						</ul>
+
+						<aside class="notes">
+							Da questa Analisi dipende gran parte della struttura del programma della
+							macchina. Senza aver definito in modo chiaro il meccanismo di controllo e
+							tracciamento dei pezzi all'interno della macchina non si può procedere nello sviluppo del sistema
+							Lo sviluppo del sistema di controlo vara in base alla tipologia di macchina.
+							Si può comprendere come sia pià difficile nel caso di un ciclo continuo.
+							Si risolve usando l'insieme di Camme Digitali e Shift Register
+						</aside>
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Controllo Scarti e Idoneità Prodotto </p>
+						<a>Macchina a Ciclo Continuo : <strong>Camme Digitali </strong></a>
+
+						<p>Simili come funzionamento alle Camme Meccaniche ma dipendenti <br> da Gradi Macchina letti da un Encoder</p>
+
+						<img  width="35%"  src="images/CAM1.png" >
+						<img  width="25%"  src="images/CAM10.gif" >
+
+						<aside class="notes">
+						Consideriamo la camma nell'idea che si ha nell'albero a camme di una macchina. Essa rappresenta
+							un eccentrico che va ad attivare una valvola durante il moto dell'albero quando essa si trova
+							a un tot di gradi di rotazione.
+							Allo stesso modo la Camma digitale si abilita in una determinata posizione di rotazione della macchina.
+							Naturalmente questo non è fatto come con camme meccaniche ma con un semplice encoder che va a leggere i grad istantane
+							della macchina. A questa idea di Camma digitale va aggiunto una funzione e un Databse di interfaccia che la gestisce.
+						</aside>
+
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Controllo Scarti e Idoneità Prodotto </p>
+						<a>Macchina a Ciclo Continuo : <strong>Shift Register</strong></a>
+
+						<p>Soluzione al Traking dei prodotti all'interno della macchina al fine di determinarne lo stato</p>
+
+						<img  width="30%"  src="images/SH2.png" >
+
+						<img  width="30%"  src="images/SH6.JPG" >
+
+						<aside class="notes">
+							Lo Shift Register non è altro che un blocco di memoria del registro solitamente Byte o multipli a cui
+							ogni bit corrisponde virtualmente ad una posizione macchina del prodotto
+							Ad ogni giro completo della macchina (o ogni attivazione di una camma di abilitazione Shift)
+							lo shift trasla di una posizione tutti i bit simulando lo spostamento dei flaconi all'interno della macchina.
+							I vari controli lungo il percorso a loro volta Setteranno o Resetteranno i bit in prossimità dei controlli stessi.
+						</aside>
+					</section>
+
+					<section>
+						<aside class="notes"> </aside>
+						<p class="top_breadcrumb">Analisi e Progettazione Processo PLC</p>
+
+						<p class="title">Sequenza del Ciclo Automatico</p>
+
+						<p>Progettazione della logica di funzionamento in Automatico della Macchina</p>
+
+						<div class="fragment">
+						<p> <strong>Cosa accade quando viene premuto il pulsante di START</strong></p>
+
+						<img  width="30%"  src="images/STARTHOMER.jpg" >
+						</div>
+						</section>
+
+
+				</section>
+
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Sviluppo Processo PLC</p>
+						<p>Implementazione Ciclo Automatico in modo sequenziale</p>
+						<ul  style="width:50%;font-size: 0.8em">
+							<li>Commutazione della macchina nello stato Automatico</li>
+							<li class="fragment">Attesa di Start da parte dell'operatore</li>
+							<li class="fragment">Shift dei Registri macchina</li>
+							<li class="fragment">Controllo Presenza Flacone Stella in Ingresso</li>
+							<li class="fragment">Trigger Etichettatrice (Espulsione Etichetta)
+							<ul>
+								<li>And Logico Shift Controllo OCR e Presenza</li>
+								<li>Trigger Stampante</li>
+								<li>Trigger Telecamera Controllo OCR</li>
+							</ul>
+							</li>
+							<li class="fragment">Trigger Telecaera Controllo Allinemaneto</li>
+							<li class="fragment">Gestione Scarto Flacone non conforme</li>
+						</ul>
+						<img width="35%"  src="images/SH9.JPG">
+						<aside class="notes">
+							Macchina in Automatico prepara tutte le altre componenti al Ciclo
+							Start dell'operatore in assenza di Allarmi
+							Shift dei registri Allo zero gradi macchina
+							Controllo presenza flacone
+							Trigger Etichettatrice per l'espusione dell'etichetta ai relativi gradi macchina
+
+
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Sviluppo Sistema Di Visione</p>
+						<p>Varia a seconda del produttore del Sistema di Visione ma la struttura generale è pressochè simile per i leader del mercato</p>
+						<ul class="left" style="width:50%;margin-top: 30px">
+							<li>Manipolazione Immagine Mediante Filtri</li>
+							<li>Impostazione Locatore</li>
+							<li>Impostazione Tool di Ispezione</li>
+							<li>Scrittura Output Risultato al PLC</li>
+						</ul>
+
+						<img class="rigth" width="30%" src="images/DATALOGIC.jpg">
+
+						<aside class="notes">
+							Ove presenti delle telecamere di controllo bisogna anche sviluppare i loro programmi di controllo.
+							Questo procedimento varia in base a marca e modello delle telecamere ma in linea di massima il
+							principio dei programmi di visione è comune tra tutti.
+
+							Manipolazione Immagine in ingresso con filtri per renderlo più idoneo all'ispezione (Binarizzazione, Modifica Scala Colori)
+						</aside>
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Sviluppo Sistema Di Visione</p>
+						<p class="title">Locatore e Tool di Ispezione</p>
+						<p>Ricavare un sistema di riferimento relativo alla posizione dell'oggetto da analizzare</p>
+
+						<img width="40%"  src="images/VIS9.png">
+						<img width="40%"  src="images/VIS11.png">
+						<aside class="notes">
+						Spesso alcuni tool di ispezione hanno costo computazionale molto alto specie se utilizzate
+						su aree di ricerca molto grandi, si utilizzano in questi casi i cosidetti locatori.
+						Si usano per rilevare la posizione di un dettaglio più generico (In questo caso un semplice BLOB)
+						ma solidale all'elemento da	ispezionare in modo da ottenere un punto di riferimento relativo ad esso.
+						In questo modo si può ridurre l'area di ricerca del tool di ispezione come si vede in figura
+						</aside>
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Sviluppo Sistema Di Visione</p>
+						<p class="title">Output Risultato al PLC</p>
+						<p>Al termine dell'elaborazione, il risultato deve essere inviato al PLC</p>
+
+						<img width="55%"  src="images/VIS13.png">
+
+						<aside>
+							Al Termine dell'ispezione il risultato verrà inviato al PLC dopo il tempo di elaborazione
+							che può variare dalle decine alle centiania di millisecondi. Si può facilmente intuire come un
+							controllo di visione complesso possa ridurre le velocità macchina in modo notevole.
+							Nel nostro caso per avere una velocità di 200 pezzi al minuto ovvero più di 3 pezzi al secondo
+							Il tempo ciclo complessivo (tra ciclo PLC e Controlli) non può superare i 300ms ma bisogna rimanere
+							molto lontani dal limite
+						</aside>
+
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Analisi e Setup Pannello Operatore</p>
+						<p>Analisi Requisiti e Campo di Applicazione</p>
+							<ul>
+								<li >Studio dei Requisiti Sistema</li>
+								<li>Analisi Dell'Hardware e Software a Disposizione</li>
+
+								<li>Studio Normative Vigenti nel campo di applicazione
+									<ul>
+									<li>21CFR Part11 - Farmaceutico</li>
+									</ul>
+								</li>
+								<li>Studio dell'Infrastruttura di rete del Cliente</li>
+							</ul>
+
+					<aside class="notes">
+						Vicini alla fase finale del progetto si passa alla progettazione di quanto riguarda il pannelo operatore e L'HMI
+						Prima di tutto bisogna studiare i requisiti, l'hardware disponibile, le normative vigenti nel campo (21CFR)
+						Infine bisogna studiare l'infrastruttura informatica del cliente confrontandosi con il loro Team IT.
+						Alcuni utenti gestiscono gli accessi alle macchine tramite l'active directory di microsoft
+						Altre volte l'accesso al pannello può essere abilitato solo previa autorizzazione remota
+						Il Cliente può voler accedere a dati statistici della macchina da remoto o interfacciarsi direttamente
+						con il Database della macchina tramite un loro gestionale
+					</aside>
+
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Analisi e Setup Pannello Operatore</p>
+						<p>Setup Pannello Operatore</p>
+						<ul>
+							<li>Configurazione Rete e Comunicazioni
+								<ul>
+									<li> Installazione Driver Di Comunicazione PLC</li>
+									<li> Setup VPN per Manutenzione Remota </li>
+								</ul>
+							</li>
+							<li>Installazione di Eventuali Add-Ons
+								<ul>
+									<li>Database Managment System</li>
+									<li>WebServer</li>
+									<li>Framework</li>
+									<li>Reporting Server</li>
+								</ul>
+							</li>
+							<li>Messa in Sicurezza del Sistema Operativo</li>
+						</ul>
+
+						<aside class="notes">
+						Pertanto in base allo studio precedente si prepara il pannello installando e configurando tutto il necessario
+						prima di iniziare lo sviluppo vero e proprio
+						</aside>
+
+						<img class="right" width="30%" src="images/APPS.png">
+
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Sviluppo dell'interfaccia HMI</p>
+						<p>Lo sviluppo dell'interfaccia HMI è una delle fasi che impiega più tempo </p>
+						<p>Senza un Interfaccia utente ben progettata il macchinario potrebbe risultare inutilizzabile</p>
+
+						<img width="35%" src="images/HMI10.jpg">
+
+						<aside class="notes">
+							Non è sufficiente che un sistemi funzioni. Deve essere anche fruibile
+						</aside>
+
+					</section>
+
+
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Sviluppo dell'interfaccia HMI</p>
+						<p>Aspetti Principali da rispettare per un interfaccia Operatore </p>
+						<ul>
+							<li>Semplicità di Uso ed Intuitività</li>
+							<li>Schermate specifiche per diversi Operatori</li>
+							<li>Grafiche Animate che somgliano il più possibile al reale processo macchina </li>
+							<li>Segnalazione di Allarmi e situazioni critiche ben visibili</li>
+							<li>Supporto al Multilingua</li>
+							<li>Gestione Lotti e Statistiche Macchina Semplice e Robusta</li>
+						</ul>
+
+
+						<aside class="notes">
+						Da premettere che questa tipologia di sistemi viene sviluppata in modo da minimizzare l'interazione utente.
+						Nel senso che nella migliore ipotesi. L'operatore deve veramente solo premere start e chiudere gli occhi.
+						Sono sistemi che devono essere molto robusti. Il pannello nella sua interezza viene utilizzato solitamente da manutentori
+						e amministratori. Gli operatori standard si limitano a supervisionare il processo.
+
+						Inoltre le interfacce potrebbero spesso essere usate da operatri di diverse età aluni de quali non familiarizzano molto con schermi touch
+						Molte operazioni base sono eseguibili dai pulsanti fisici (START-RESET ALLARMI - STOP)
+						In Condizioni ottimali un opertore deve solo dare lo start alla macchina</aside>
+					</section>
+
+					<section>
+						<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+						<p class="title">Sviluppo dell'interfaccia HMI</p>
+						<p>Simulazione Runtime HMI Labeltech </p>
+
+						<video style="width:50%" loop data-autoplay data-src="video/HMI.mp4" ></video>
+
+						<aside class="notes">
+							Vediamo un video del pannello operatore della Labeltech simulato su una macchina virtuale di sviluppo
+							Da notare la home page che rappresenta fedelmente il processo macchina.
+							La posizione delle stelle e lo stato dei flaconi è esattamente quello che si vedrebbe nella macchina
+							dal vivo. Ovviamente qui è simulato a rallentatore
+						</aside>
+
+					</section>
+
+				</section>
+
+
+				<section>
+					<p class="top_breadcrumb">Progettazione e Sviluppo Software</p>
+					<p class="title">Documentazione e Manuale Operatore</p>
+					<p>Descrizione dettagliata dei componenti macchina, Sicurezza, Manutenione, HMI . . .</p>
+					<img  width="50%" src="video/CRY.gif">
+
+
+					<aside class="notes">
+					Documento di circa 100 pagine dove si spiega in dettaglio tutto il funzionamento della macchina
+					Come operare sul pannelo HMI, Dettagli sulla sicurezza, Manutenzione ordinaria, ecc
+					</aside>
+
+				</section>
+
+				<section data-background-video-loop  data-background-video="video/LABELTECH.mp4">
+
+					<h3 class="title">Conclusione</h3>
+
+					<!--<video muted loop style="width:50%" data-autoplay  data-src="video/LABELTECH.mp4" ></video>-->
+
+
+					<aside class="notes">
+						Sviluppare un macchinario nel settore dell'automazione industriale è molto complesso e richiede una
+						preparazione in diversi campi. Tuttavia la soddisfazione che ne risulta supera di gran lunga lo sforzo
+						e l'impegno speso. Sopratutto quando alla fine vedi i risultati del lavoro svolto.
+					</aside>
+
+				</section>
+
+				<section data-background="images/BORED.jpg">
+					<h2 class="title">Grazie per L'Attenzione</h2>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+		</script>
+		<link rel="stylesheet" href="css/main.css">
+	</body>
+</html>
